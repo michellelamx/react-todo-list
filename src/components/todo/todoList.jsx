@@ -14,7 +14,7 @@ export function TodoList() {
             return <TodoItem key={todo.id} {...todo} />
           })
         :
-        <p>You have no todos yet - let's get busy!</p>
+        <p>You have no todos - let&apos;s get busy!</p>
       }
     </div>
   )

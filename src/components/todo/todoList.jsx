@@ -8,9 +8,14 @@ export function TodoList() {
 
   return (
     <div className='todo-list'>
-      {todos.map(todo => {
-        return <TodoItem key={todo.id} {...todo} />
-      })}
+      {
+        todos.length > 0 ?
+          todos.map(todo => {
+            return <TodoItem key={todo.id} {...todo} />
+          })
+        :
+        <p>You have no todos yet - let's get busy!</p>
+      }
     </div>
   )
 }
